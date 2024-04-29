@@ -1,3 +1,3 @@
 # vsc-python-env-rye
 
-VSCode で Python 開発環境構築のテンプレート
+VSCode の Dev Container 内で開発を行うための Python 環境構築テンプレート
