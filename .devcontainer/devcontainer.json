@@ -6,10 +6,20 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python"],
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff"
+      ],
       "settings": {
         "python.defaultInterpreterPath": "/opt/rye/shims/python",
-        "[python]": {},
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.codeActionsOnSave": {
+                "source.fixAll.ruff": "explicit",
+                "source.organizeImports.ruff": "explicit"
+            },
+            "editor.formatOnSave": true
+        },
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
         "terminal.integrated.defaultProfile.linux": "zsh",
